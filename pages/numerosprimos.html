@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/digitopares.css">        
+    <title>Serie de Números Primos</title>
+</head>
+<body>
+    <section class="contenedor">
+        <h1>Serie de Números Primos</h1>
+        <form>
+            <div class="grupo">
+                <label for="serie">Ingrese la serie de números:</label>
+                <input type="text" id="serie" value="" placeholder="Ingrese aquí los números separados por coma (,)"/>
+            </div>
+            <div class="grupo">
+                <button type="button" onclick="cal.serieNumerosPrimos()">Calcular números primos</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            <div class="e">
+                <textarea id="resp" rows="10" cols="26">Respuesta aquí..
+                </textarea>
+            </div>
+        </form>
+    </section>
+    <script src="/js/calculos.js"></script>
+</body>
+</html>
